@@ -1,0 +1,26 @@
+{
+  "name": "cortex-plugin-ecommerce-print",
+  "version": "1.0.0",
+  "description": "Print-on-Demand Fulfillment — Printful/Printify/Gelato for design upload, product creation, order routing, catalog management",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-ecommerce-print",
+  "homepage": "https://cortexprism.io/marketplace/plugins/ecommerce-print",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "pod_upload_design", "description": "Upload design to POD platform", "params": [] },
+    { "name": "pod_create_product", "description": "Create product with design", "params": [] },
+    {
+      "name": "pod_route_order",
+      "description": "Route order to optimal fulfillment center",
+      "params": []
+    },
+    { "name": "pod_manage_catalog", "description": "Manage seasonal catalog", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
